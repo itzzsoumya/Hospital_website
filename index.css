@@ -1,0 +1,817 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+}
+.menu-right {
+    text-align: right;
+}
+#span {
+    margin: 0 20px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+   
+}
+nav ul  {
+    list-style: none;
+    background-color: rgb(85, 144, 255);
+    color: #fff;
+    padding: 0;
+    text-align: center;
+
+    transition: 1s;
+}
+nav.black ul {
+    background: rgb(255, 10, 10);
+}
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+
+nav ul li a:hover {
+    color: black;
+}
+   
+    
+
+#svg2 {
+    height: 50vh;
+    width: 60%;
+   margin-top: 10%;
+   padding-left: 2%;
+   animation: zoom-in-zoom-out 2s ease 1;
+   
+}
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(.5 ,.5);
+    }
+    100% {
+        transform: scale(1.1,1.1);
+    }
+}
+.flex-containe {
+    display: flex;
+    height: 80vh;
+   
+    background-color: lightblue;
+    
+    
+}
+.flex-containe > div {
+    width: 100%;
+
+}
+
+
+#first , #second , #third {
+   text-align: center;
+   animation-name: text;
+   animation-duration: 8s;
+   animation-iteration-count: 5;
+   animation-direction: alternate-reverse;
+   font-size: 25px;
+   
+}
+@keyframes text {
+    0% {
+        font-size: 20px;
+        color: darkred;
+
+    }
+    25% {
+        font-size: 25px;
+        color: darkblue;
+    }
+    75% {
+        font-size:20px ;
+        color: darkmagenta;
+    }
+    100% {
+        font-size: 25px;
+        
+    }
+    
+}
+#first {
+    margin-top: 25%;
+}
+
+#book {
+   margin-top: 22%;
+   margin-left: 65%;
+   padding: 15px 40px;
+   background-color: orange;
+   cursor: pointer;
+   color: #000;
+   font-size: 20px;
+   border-radius: 10px;
+    width: 40%;
+    border: 1px solid;
+    transition: .2s ;
+    
+    
+   
+}
+#book:hover {
+    width: 45%;
+    background-color: orangered !important;
+    border: 2px solid white;
+    color: #fff;
+}
+
+
+.containe {
+    width: 100%;
+    height: 81vh;
+    background-color: rgba(0,0,0,0.1);
+    margin: 10% auto;
+    display: inline-flex;
+}
+#ambu {
+    padding-top: 20%;
+}
+#svg1 {
+    height: 55vh;
+    width: auto;
+    margin-top: 34%;
+    
+   margin-left: 3%;
+  
+}
+
+#facaulty {
+    height:80vh;
+    width: 100%;
+    display: inline-flex;
+    background-color: antiquewhite;
+}
+#a1 , #a2 , #a3  {
+    width: 30%;
+    height: 40%;
+    margin-left: 2.5%;
+    margin-top: 15%;
+}
+.faculty1 {
+    height:50vh;
+    width: 100%;
+    display: inline-flex;
+    background-color: rgb(211, 255, 255);
+}
+
+#b1 , #b2 , #b3  {
+    width: 30%;
+    height: 60%;
+    margin-left: 2.5%;
+    
+    margin-top: -5%;
+}
+
+#facaulty img:hover ,
+.faculty1 img:hover {
+  transform: scale(.75,.75);
+}
+#service {
+    margin: 0 auto;
+    
+
+}
+
+.rating {
+    height: 40vh;
+    width: 95%;
+    margin: 20% auto;
+    display: inline-flex;
+    
+}
+.card {
+    width: 33%;
+    height: 20vh;
+    background-color: rgb(255, 127, 127);
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding: 2%;
+}
+.card2 {
+    width: 33%;
+    height: 20vh;
+    background-color: rgb(129, 255, 156);
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding: 2%;
+}
+.card3 {
+    width: 33%;
+    height: 20vh;
+    background-color: rgb(255, 148, 255);
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 10%;
+    padding: 2%;
+}
+
+
+.contact {
+    width: 100%;
+    height: 70vh;
+    background-color: #9e9393;
+    margin: 3% auto;
+    display: inline-flex;
+}
+.address {
+    margin-left: 10%;
+    padding-top: 8%;
+    
+}
+form {
+    margin-left: 30%;
+    margin-top: 5%;
+    font-size: 25px;
+    width: 100%;
+    height: 60vh;
+    
+
+}
+input {
+    width: 270px;
+    height: 35px;
+    margin-left: 10%;
+}
+
+textarea {
+   
+    width: 35%;
+    height: 80px;
+    margin-left: 10%;
+   
+
+
+}
+
+#btn {
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: rgb(255, 95, 21);
+    border: 2px solid white;
+    color: #fff;
+    margin-left: 16%;
+    margin-top: 2%;
+}
+#btn:hover {
+    background-color: white !important;
+    color: #000;
+    border: 2px solid black;
+}
+
+
+@media screen and (max-width:620px) {
+    
+    .logo {
+        margin-top: 0;
+    }
+
+    #span {
+        display: block;
+        
+        
+    
+    }
+    ul li {
+        display: block;
+        
+    }
+    ul {
+        display: none;
+        font-size: 50%;
+        text-align: center;
+    }
+  
+    #svg2 {
+        height: 80vh;
+        width: 95%;
+       margin-top: 10%;
+      
+       animation: zoom-in-zoom-out 3s ease 1;
+       
+    }
+    @keyframes zoom-in-zoom-out {
+        0% {
+            transform: scale(1,1);
+        }
+        50%{
+            transform: scale(.5 ,.5);
+        }
+        100% {
+            transform: scale(1.1,1.1);
+        }
+    }
+    .flex-containe {
+        /* display: flex; */
+        height: 80vh;
+       
+        background-color: lightblue;
+        
+        
+    }
+    .flex-containe > div {
+        width: 100%;
+    
+    }
+    
+    
+    #first , #second , #third {
+       text-align: center;
+       animation-name: text;
+       animation-duration: 8s;
+       animation-iteration-count: 3;
+       animation-direction: alternate-reverse;
+       font-size: 20px;
+       
+    }
+    @keyframes text {
+        0% {
+            font-size: 17px;
+            color: darkred;
+    
+        }
+        25% {
+            font-size: 20px;
+            color: darkblue;
+        }
+        75% {
+            font-size:17px ;
+            color: darkmagenta;
+        }
+        100% {
+            font-size: 20px;
+            
+        }
+        
+    }
+    #first {
+        margin-top: 40%;
+    }
+    
+    #book {
+       margin-top: 25%;
+       margin-left: 7%;
+       padding: 6px 10px;
+       background-color: orange;
+       cursor: pointer;
+       color: #000;
+       font-size: 14px;
+       border-radius: 10px;
+        border: 1px solid;
+        transition: 2s ;
+        width: 40%;
+        position: absolute;
+        
+        
+       
+    }
+    #book:hover {
+        width: 45%;
+        background-color: orangered !important;
+        border: 2px solid white;
+        color: #fff;
+    }
+    
+    
+
+    .containe {
+        width: 100%;
+        height: 80vh;
+        background-color: rgba(0,0,0,0.1);
+        margin: 10% auto;
+        display: inline-flex;
+    }
+    #ambu , h1 {
+        padding-top: 10%;
+        font-size: 90%;
+        margin-right: 25%;
+        
+    }
+    #svg1 {
+        height: 70vh;
+        width: 95%;
+        margin-top: 34%;
+        
+       margin-left: 3%;
+      
+    }
+
+
+    #facaulty {
+        height:80vh;
+        width: 100%;
+        display: inline-flex;
+        background-color: antiquewhite;
+    }
+    #a1 , #a2 , #a3  {
+        width: 30%;
+        height: 35%;
+        margin-left: 2.5%;
+        margin-top: 35%;
+    }
+    .faculty1 {
+        height:50vh;
+        width: 100%;
+        display: inline-flex;
+        background-color: rgb(211, 255, 255);
+    }
+    
+    #b1 , #b2 , #b3  {
+        width: 30%;
+        height: 60%;
+        margin-left: 2.5%;
+        
+        margin-top: -20%;
+    }
+    
+    #facaulty img:hover ,
+    .faculty1 img:hover {
+      transform: scale(.75,.75);
+    }
+
+   
+
+    .rating {
+        height: 40vh;
+        width: 100%;
+        margin: 13% auto;
+        display: inline-flex;
+        
+    }
+    .card {
+        width: 33%;
+        height: 52vh;
+        background-color: rgb(255, 127, 127);
+        text-align: center;
+        margin-left: 5%;
+        margin-top: 4%;
+        padding: 2%;
+    }
+    .card2 {
+        width: 33%;
+        height: 52vh;
+        background-color: rgb(129, 255, 156);
+        text-align: center;
+        margin-left: 5%;
+        margin-top: 4%;
+        padding: 2%;
+    }
+    .card3 {
+        width: 33%;
+        height: 52vh;
+        background-color: rgb(255, 148, 255);
+        text-align: center;
+        margin-left: 5%;
+        margin-top: 4%;
+        padding: 2%;
+    }
+    
+    
+    .contact {
+        width: 100%;
+        height: 70vh;
+        background-color: #9e9393;
+        margin: 30% auto;
+        display: inline-flex;
+    }
+    .address {
+        margin-left: 10%;
+        padding-top: 8%;
+        font-size: 95%;
+        
+    }
+    form {
+        font-size: 95%;
+        margin-left: 10%;
+        margin-top: 10%;
+        
+        width: 100%;
+        height: 60vh;
+        
+    
+    }
+    input {
+        width: 220px;
+        height: 35px;
+        margin-left: 5%;
+    }
+    
+    textarea {
+       
+        width: 60%;
+        height: 80px;
+        margin-left: 10%;
+       
+
+    }
+     #btn {
+         padding: 10px 25px;
+         border-radius: 5px;
+         background-color: rgb(255, 95, 21);
+         border: 2px solid white;
+         color: #fff;
+         margin-left: 5%;
+     }
+     #btn:hover {
+         background-color: white !important;
+         color: #000;
+     }
+
+
+     
+   
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+    
+    .logo {
+        
+        position: absolute;
+        
+    }
+
+ 
+  
+    #svg2 {
+        height: 80vh;
+        width: 95%;
+       margin-top: 10%;
+      
+       animation: zoom-in-zoom-out 3s ease 1;
+       
+    }
+    @keyframes zoom-in-zoom-out {
+        0% {
+            transform: scale(1,1);
+        }
+        50%{
+            transform: scale(.5 ,.5);
+        }
+        100% {
+            transform: scale(1.1,1.1);
+        }
+    }
+    .flex-containe {
+        /* display: flex; */
+        height: 80vh;
+       
+        background-color: lightblue;
+        
+        
+    }
+    .flex-containe > div {
+        width: 100%;
+    
+    }
+    
+    
+    #first , #second , #third {
+       text-align: center;
+       animation-name: text;
+       animation-duration: 8s;
+       animation-iteration-count: 3;
+       animation-direction: alternate-reverse;
+       font-size: 18px;
+       
+    }
+    @keyframes text {
+        0% {
+            font-size: 17px;
+            color: darkred;
+    
+        }
+        25% {
+            font-size: 20px;
+            color: darkblue;
+        }
+        75% {
+            font-size:17px ;
+            color: darkmagenta;
+        }
+        100% {
+            font-size: 20px;
+            
+        }
+        
+    }
+    #first {
+        margin-top: 40%;
+    }
+    
+    #book {
+       margin-top: 10%;
+       margin-left: 17%;
+       padding: 6px 10px;
+       background-color: orange;
+       cursor: pointer;
+       color: #000;
+       font-size: 14px;
+       border-radius: 10px;
+        border: 1px solid;
+        transition: 2s ;
+        width: 40%;
+        
+        
+        
+       
+    }
+    #book:hover {
+        width: 45%;
+        background-color: orangered !important;
+        border: 2px solid white;
+        color: #fff;
+    }
+    
+    
+
+    .containe {
+        width: 100%;
+        height: 80vh;
+        background-color: rgba(0,0,0,0.1);
+        margin: 10% auto;
+        display: inline-flex;
+    }
+    #ambu , h1 {
+        padding-top: 10%;
+        font-size: 90%;
+        margin-right: 25%;
+        
+    }
+    #svg1 {
+        height: 50vh;
+        width: 95%;
+        margin-top: 34%;
+        
+       margin-left: 3%;
+      
+    }
+
+
+    #facaulty {
+        height:80vh;
+        width: 100%;
+        display: inline-flex;
+        background-color: antiquewhite;
+    }
+    #a1 , #a2 , #a3  {
+        width: 30%;
+        height: 35%;
+        margin-left: 2.5%;
+        margin-top: 30%;
+    }
+    .faculty1 {
+        height:50vh;
+        width: 100%;
+        display: inline-flex;
+        background-color: rgb(211, 255, 255);
+    }
+    
+    #b1 , #b2 , #b3  {
+        width: 30%;
+        height: 60%;
+        margin-left: 2.5%;
+        
+        margin-top: -5%;
+    }
+    
+    #facaulty img:hover ,
+    .faculty1 img:hover {
+      transform: scale(.75,.75);
+    }
+
+   
+
+    .rating {
+        height: 40vh;
+        width: 100%;
+        margin: 13% auto;
+        display: inline-flex;
+        
+    }
+    .card {
+        width: 33%;
+        height: 52vh;
+        background-color: rgb(255, 127, 127);
+        text-align: center;
+        margin-left: 5%;
+        margin-top: 4%;
+        padding: 2%;
+    }
+    .card2 {
+        width: 33%;
+        height: 52vh;
+        background-color: rgb(129, 255, 156);
+        text-align: center;
+        margin-left: 5%;
+        margin-top: 4%;
+        padding: 2%;
+    }
+    .card3 {
+        width: 33%;
+        height: 52vh;
+        background-color: rgb(255, 148, 255);
+        text-align: center;
+        margin-left: 5%;
+        margin-top: 4%;
+        padding: 2%;
+    }
+    
+    
+    .contact {
+        width: 100%;
+        height: 70vh;
+        background-color: #9e9393;
+        margin: 30% auto;
+        display: inline-flex;
+    }
+    .address {
+        margin-left: 10%;
+        padding-top: 8%;
+        font-size: 95%;
+        
+    }
+    form {
+        font-size: 95%;
+        margin-left: 10%;
+        margin-top: 10%;
+        
+        width: 100%;
+        height: 60vh;
+        
+    
+    }
+    input {
+        width: 220px;
+        height: 35px;
+        margin-left: 5%;
+    }
+    
+    textarea {
+       
+        width: 35%;
+        height: 80px;
+        margin-left: 10%;
+       
+
+    }
+     #btn {
+         padding: 10px 25px;
+         border-radius: 5px;
+         background-color: rgb(255, 95, 21);
+         border: 2px solid white;
+         color: #fff;
+         margin-left: 5%;
+     }
+     #btn:hover {
+         background-color: white !important;
+         color: #000;
+     }
+
+
+     
+   
+
+}

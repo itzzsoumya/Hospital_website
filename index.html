@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+   
+
+  
+</head>
+<body>
+    
+   <div class="hero">
+     <header>
+      <div class="logo" style=" z-index: 5; position: absolute; top: 1%;">MEDICARE</div>
+       <nav>
+        <div class="menu-right">
+          <span onclick="myFunction()" id="span">&#9776;</span>
+
+         
+         <div class="menu">
+          
+           <ul id="menu">
+             <li><a href="#home">Home</a></li>
+             <li><a href="#Service" id="service">About</a></li>
+             
+             <li><a href="#facaulty ">Facaulty</a></li>
+             <li><a href="#rev">Review</a></li>
+             <li><a href="#con">Contact</a></li>
+             
+             
+           </ul>
+
+           </div>
+         </div>
+      </nav>
+        <div class="flex-containe" id="home">
+          <div>
+            
+            <h5 id="first">We Are Here For Your Care</h5>
+            <h5 id="second">Stay Safe,Stay Healthy</h5>
+            <p id="third">We are ready to your care 24/7 Any help just call us</p>
+            <button type="submit" id="book">&#128222 Call now</button>
+          
+            
+          
+          </div>
+        <div><img src="svg2.svg" id="svg2"></div>
+        
+          
+        </div>
+    </header>
+     
+  </div>
+
+  <div class="containe" id="Service">
+   
+
+    <div><img src="doctor.svg" id="svg1"></div>
+    <div id="service"><h1 id="ambu">&#x1F691   We Provide 24*7 Ambulance Service</h1>
+      <br>
+      <h1>&#128137  Free Medical Checkup Camp</h1>
+      <br>
+      <h1>&#9201  24 Hours Doctor Available</h1>
+      <br>
+      <h1>&#128138  We Provide Free Medicine</h1>
+      <br>
+      <h1>&#127973 All Time Available Emergency Room</h1>
+      
+    </div>
+    
+    
+  </div>
+
+ 
+
+  <div id="facaulty">
+
+    <img src="dr4.jpg" id="a1">
+    <img src="dr7.jpg" id="a2"> 
+    <img src="dr2.jpg" id="a3">
+  </div>
+  
+  <div class="faculty1">
+
+    
+    <img src="dr1.jpg" id="b1">
+    <img src="dr6.jpg" id="b2">
+    <img src="dr3.webp" id="b3">
+   
+
+  </div>
+
+  
+  <div class="rating" id="rev">
+    <div class="card">
+    <img src="dr1.jpg" alt="avater" style="width: 60px; border-radius: 80%;">
+    <p>&#11088 &#11088 &#11088 &#11088 &#11088</p>
+    <p><span><strong>William Son</strong></span><br>Higher Medical Facaulty</p>
+   <em> <p>Lorem ipsum dolor, sit amet consectetur adipisicing .<br>
+    Voluptates laborum harum molestiae et numquam, recusandae neque.</p></em>
+  </div>
+
+  <div class="card2">
+    <img src="dr3.webp" alt="avater" style="width: 60px; border-radius: 80%;">
+    <p>&#11088 &#11088 &#11088 &#11088 &#11088</p>
+    <p><span><strong>William Son</strong></span><br>Higher Medical Facaulty</p>
+   <em> <p>Lorem ipsum dolor, sit amet consectetur adipisicing .<br>
+    Voluptates laborum harum molestiae et numquam, recusandae neque.</p></em>
+  </div>
+
+  <div class="card3">
+    <img src="dr5.jpg" alt="avater" style="width: 60px; border-radius: 80%;">
+    <p>&#11088 &#11088 &#11088 &#11088 &#11088</p>
+    <p><span><strong>William Son</strong></span><br>Higher Medical Facaulty</p>
+   <em> <p>Lorem ipsum dolor, sit amet consectetur adipisicing .<br>
+    Voluptates laborum harum molestiae et numquam, recusandae neque.</p></em>
+  </div>
+  </div>
+  
+
+    <div class="contact" id="con">
+      <div class="address">
+      <h2>&#127758 Address</h2>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <br>
+      <h2>&#128222 Phone</h2>
+      <p>+91 9800000009</p>
+      <br>
+      <h2>&#128232 Email</h2>
+      <p>email@gmail.com</p>
+    </div>
+      <form action="" method="post">
+        <label>Name :</label>
+        <input type="text" name="name" id="name"><br><br>
+        <lable>Email :</lable>
+        <input type="email" name="email"><br><br>
+        <label>Phone :</label>
+        <input type="tel" name="phone"><br><br>
+        <label>Type  :</label>
+        <textarea rows="12" cols="12">Type your Comment..</textarea><br><br>
+        <button type="submit" id="btn">Submit</button>
+      </form>
+      <br><br>
+      
+    </div>
+   
+
+
+  
+
+
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script> 
+  $(window).scroll(function() {
+    if($(window).scrollTop()) {
+      $("nav").addClass("black");
+    }
+    else{
+      $("nav").removeClass("black");
+    }
+  })
+
+  function myFunction() {
+            var x = document.getElementById("menu");
+    
+            if(x.style.display == "block"){
+                x.style.display = "none";
+            }
+            else{
+                x.style.display = "block";
+            }
+        }
+  
+  </script>
+</body>
+</html>
